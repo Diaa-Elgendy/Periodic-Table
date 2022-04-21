@@ -4,6 +4,7 @@ Periodic table (Mobile application with Java &amp; Sqlite)
 
 
 Splash Screen
+<img scr="https://github.com/Diaa-Elgendy/PeriodicTable/blob/master/Google%20Pixel%204%20XL%20Screenshot%201.png" width = 200>
 ![Google Pixel 4 XL Screenshot 1](https://user-images.githubusercontent.com/88054373/164568231-ce0e8b86-c4ea-4d55-bfca-0fd8bb456a18.png)
 
 Home Screen
