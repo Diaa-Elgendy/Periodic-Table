@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="?attr/background_lite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/over_view"
+                style="@style/first_card_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="?attr/cardBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/title_over_view"
+                        style="@style/main_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorPrimary"
+                        android:text="@string/overview" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/latin_name" />
+
+                    <TextView
+                        android:id="@+id/latin_name"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/english_name" />
+
+                    <TextView
+                        android:id="@+id/english_name"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/year_of_discovery" />
+
+                    <TextView
+                        android:id="@+id/year_of_discovery"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discoverer" />
+
+                    <TextView
+                        android:id="@+id/discoverer"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cas_number" />
+
+                    <TextView
+                        android:id="@+id/cas_number"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/card_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="?attr/cardBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/properties"
+                        style="@style/main_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorPrimary"
+                        android:text="@string/properties" />
+
+                    <TextView
+                        android:id="@+id/textView59"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/atomic_number_z" />
+
+                    <TextView
+                        android:id="@+id/atomic_number"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView61"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/period_group" />
+
+                    <TextView
+                        android:id="@+id/period_group"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/block" />
+
+                    <TextView
+                        android:id="@+id/block"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView57"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/element_category" />
+
+                    <TextView
+                        android:id="@+id/Element_category"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/card_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="?attr/cardBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/atomic_properties"
+                        style="@style/main_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorPrimary"
+                        android:text="@string/atomic_properties" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_of_protons" />
+
+                    <TextView
+                        android:id="@+id/number_of_protons"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_of_electrons" />
+
+                    <TextView
+                        android:id="@+id/Number_of_electrons"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text=" " />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/number_of_neutrons" />
+
+                    <TextView
+                        android:id="@+id/Number_of_neutrons"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text=" " />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/atomic_weight" />
+
+                    <TextView
+                        android:id="@+id/atomic_weight"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text=" " />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/electronic_configuration" />
+
+                    <TextView
+                        android:id="@+id/electronic_configuration"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text=" " />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/electron_shell" />
+
+                    <TextView
+                        android:id="@+id/electron_shell"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text=" " />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ion_charge" />
+
+                    <TextView
+                        android:id="@+id/ion_charge"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text=" " />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView77"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ionization_potential" />
+
+                    <TextView
+                        android:id="@+id/ionization_energy"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/oxidation_state" />
+
+                    <TextView
+                        android:id="@+id/oxidation_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/components"
+                        tools:ignore="HardcodedText"
+                        android:text=" " />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/atomic_radius" />
+
+                    <TextView
+                        android:id="@+id/atomic_radius"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text=" " />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/covalent_radius" />
+
+                    <TextView
+                        android:id="@+id/covalent_radius"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text=" " />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/van_der_waals_radius" />
+
+                    <TextView
+                        android:id="@+id/van_der_waals_radius"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text=" " />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/card_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="?attr/cardBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/physical_properties"
+                        style="@style/main_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorPrimary"
+                        android:text="Physical properties"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/physical_state" />
+
+                    <TextView
+                        android:id="@+id/physical_state"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText,TooManyViews"
+                        android:text=" " />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/density" />
+
+                    <TextView
+                        android:id="@+id/density"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText,TooManyViews"
+                        android:text="" />
+
+                    <View style="@style/dividers"
+                        tools:ignore="TooManyViews" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/color" />
+
+                    <TextView
+                        android:id="@+id/color"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text=" " />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/melting_point_i_s_u" />
+
+                    <TextView
+                        android:id="@+id/melting_point"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView49"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/boiling_point_i_s_u" />
+
+                    <TextView
+                        android:id="@+id/boiling_point"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/card_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="?attr/cardBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/reactivity"
+                        style="@style/main_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorPrimary"
+                        android:text="@string/reactivity" />
+
+                    <TextView
+                        android:id="@+id/textView52"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/electronegativity_pauling_scale" />
+
+                    <TextView
+                        android:id="@+id/electronegativity"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/valence" />
+
+                    <TextView
+                        android:id="@+id/valence"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/electron_affinity" />
+
+                    <TextView
+                        android:id="@+id/electron_affinity"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/card_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="?attr/cardBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/thermodynamic_properties"
+                        style="@style/main_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorPrimary"
+                        android:text="@string/thermodynamic_properties" />
+
+                    <TextView
+                        android:id="@+id/textView75"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fusion_heat" />
+
+                    <TextView
+                        android:id="@+id/fusion_heat"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView71"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/specific_heat" />
+
+                    <TextView
+                        android:id="@+id/specific_heat"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView73"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vaporization_heat" />
+
+                    <TextView
+                        android:id="@+id/vaporization_heat"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/card_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="?attr/cardBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/electromagnetic_properties"
+                        style="@style/main_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorPrimary"
+                        android:text="@string/electromagnetic_properties" />
+
+
+                    <TextView
+                        android:id="@+id/textView88"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/electrical_type" />
+
+                    <TextView
+                        android:id="@+id/electrical_type"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView82"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/electrical_conductivity" />
+
+                    <TextView
+                        android:id="@+id/electrical_conductivity"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView85"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/resistivity" />
+
+                    <TextView
+                        android:id="@+id/resistivity"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        android:id="@+id/textView90"
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/magnetic_type" />
+
+                    <TextView
+                        android:id="@+id/magnetic_type"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/molar_magnetic_susceptibility" />
+
+                    <TextView
+                        android:id="@+id/molar_magnetic_susceptibility"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mass_magnetic_susceptibility" />
+
+                    <TextView
+                        android:id="@+id/mass_magnetic_susceptibility"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/volume_magnetic_susceptibility" />
+
+                    <TextView
+                        android:id="@+id/volume_magnetic_susceptibility"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/card_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="?attr/cardBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/abundances"
+                        style="@style/main_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorPrimary"
+                        android:text="@string/abundances" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/in_universe" />
+
+                    <TextView
+                        android:id="@+id/in_universe"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/in_sun" />
+
+                    <TextView
+                        android:id="@+id/in_sun"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/in_meteorites" />
+
+                    <TextView
+                        android:id="@+id/in_meteorites"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/in_earth_s_crust" />
+
+                    <TextView
+                        android:id="@+id/in_earth_s_crust"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/in_oceans" />
+
+                    <TextView
+                        android:id="@+id/in_oceans"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/in_human_body" />
+
+                    <TextView
+                        android:id="@+id/in_human_body"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/card_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="?attr/cardBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/nuclear_properties"
+                        style="@style/main_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorPrimary"
+                        android:text="@string/nuclear_properties" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radioactive" />
+
+                    <TextView
+                        android:id="@+id/radioactive"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/half_life_time" />
+
+                    <TextView
+                        android:id="@+id/half_life_time"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <View style="@style/dividers" />
+
+                    <TextView
+                        style="@style/sub_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/decay_mode" />
+
+                    <TextView
+                        android:id="@+id/decay_mode"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+              <androidx.cardview.widget.CardView
+                style="@style/card_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="?attr/cardBackground"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/uses_importance"
+                        style="@style/main_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:textColor="?attr/colorPrimary"
+                        android:text="Uses &#38; importance" />
+
+                    <TextView
+                        android:id="@+id/uses_importance1"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/uses_importance2"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/uses_importance3"
+                        style="@style/components"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:ignore="HardcodedText"
+                        android:text="" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.core.widget.NestedScrollView>

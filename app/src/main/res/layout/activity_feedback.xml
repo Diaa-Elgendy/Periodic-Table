@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_lite"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    tools:context=".FeedbackActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:title="Setting"
+        app:titleTextColor="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar_feedback" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:ignore="UselessParent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/type_of_message"
+                style="@style/sub_title"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/textView81"/>
+
+            <Spinner
+                android:id="@+id/feedback_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#fff"
+
+                android:drawableBottom="@drawable/rectangle_boarder"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/message"
+                style="@style/sub_title"
+                android:id="@+id/textView79"/>
+
+            <EditText
+                android:layout_width="385dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                style="@style/components"
+                android:drawableBottom="@drawable/rectangle_boarder"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/editText2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/your_e_mail_optional"
+                style="@style/sub_title"
+                android:id="@+id/textView138"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                style="@style/components"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/editText3"/>
+
+            <TextView
+                android:id="@+id/textView139"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/we_will_e_mail_you_directly_if_we_need_more_details_about_an_issue_in_order_to_fix_it"
+                style="@style/components"
+                android:layout_marginBottom="30dp"/>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rate_us"
+                android:text="@string/send"
+                android:layout_gravity="center"
+                android:textColor="?attr/background_dark"
+                android:textSize="17sp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

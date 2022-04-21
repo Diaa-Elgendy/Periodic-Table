@@ -1,0 +1,332 @@
+<resources>
+
+    <!-- Day Mode -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#008cff</item>
+        <item name="colorPrimaryDark">#047fe4</item>
+        <item name="colorAccent">#008cff</item>
+        <item name="background_dark">#dbdfe2</item>
+        <item name="background_lite">#e9eef3</item>
+        <item name="background_lite2">#fff</item>
+        <item name="textColorTable">#102131</item>
+        <item name="text_color">#102131</item>
+        <item name="hint">#768291</item>
+        <item name="cardBackground">#fff</item>
+        <item name="view">#c7c7d1</item>
+        <item name="gray">#bebebe</item>
+
+        <item name="nonMetals">#02e289</item>
+        <item name="alkaliMetals">#ff6666</item>
+        <item name="alkalineEarthMetals">#ffcc99</item>
+
+        <!--<item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>-->
+
+    </style>
+
+    <!-- Night mode -->
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#017de2</item>
+        <item name="colorPrimaryDark">#0361ae</item>
+        <item name="colorAccent">#017de2</item>
+        <item name="background_dark">#102131</item>
+        <item name="background_lite">#182a3c</item>
+        <item name="background_lite2">#102131</item>
+        <item name="cardBackground">#1d3146</item>
+        <item name="textColorTable">#102131</item>
+        <item name="text_color">#e7e6e6</item>
+        <item name="hint">#768291</item>
+        <item name="view">#c7c7d1</item>
+        <item name="gray">#8f8f8f</item>
+
+        <item name="nonMetals">#02b36c</item>
+        <item name="alkaliMetals">#d24848</item>
+        <item name="alkalineEarthMetals">#e1b07f</item>
+        <!--<item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>-->
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="space">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">1dp</item>
+    </style>
+
+    <style name="groups">
+        <item name="android:layout_width">62dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/background_dark</item>
+        <item name="android:textColor">?attr/hint</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="periods">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">61.5dp</item>
+        <item name="android:background">?attr/background_dark</item>
+        <item name="android:textColor">?attr/hint</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:paddingLeft">5sp</item>
+        <item name="android:paddingRight">5sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="categories">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/textColorTable</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="dividers">
+        <item name="android:background">?attr/view</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="main_title">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">?attr/hint</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
+    <style name="sub_title">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="components">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/text_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textDirection">ltr</item>
+    </style>
+
+    <style name="components2">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/text_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="duplicated_sub_title">
+        <item name="android:textSize">17dp</item>
+        <item name="android:textColor">?attr/gray</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="duplicated_components">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">?attr/gray</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="ver_scroll_bar">
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarSize">3dp</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarThumbVertical">?attr/colorPrimary</item>
+        <item name="android:background">?attr/background_lite</item>
+    </style>
+
+    <style name="first_card_View">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+
+    </style>
+
+    <style name="card_View">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="card_View_dictionary">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="card_linear">
+        <item name="android:background">#182a3c</item>
+    </style>
+
+    <style name="atomic_no">
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:textColor">?attr/textColorTable</item>
+    </style>
+
+    <style name="symbol">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">26dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/textColorTable</item>
+    </style>
+
+    <style name="name">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:textColor">?attr/textColorTable</item>
+    </style>
+
+    <style name="non_metals">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/non_metals</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="alkali_metals">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@drawable/alkali_metals</item>
+    </style>
+
+    <style name="noble_gases">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@drawable/noble_gases</item>
+    </style>
+
+    <style name="alkaline_earth_metals">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@drawable/alkaline_earth_metals</item>
+    </style>
+
+    <style name="metalloids">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@drawable/metalloids</item>
+    </style>
+
+    <style name="transition_metals">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@drawable/transition_metals</item>
+    </style>
+
+    <style name="post_transition_metals">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@drawable/post_transition_metals</item>
+    </style>
+
+    <style name="halogens">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@drawable/halogens</item>
+    </style>
+
+    <style name="lanthanides">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@drawable/lanthanides</item>
+    </style>
+
+    <style name="actinoides">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@drawable/actinoides</item>
+    </style>
+
+    <style name="nav_draw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">?attr/text_color</item>
+    </style>
+
+</resources>

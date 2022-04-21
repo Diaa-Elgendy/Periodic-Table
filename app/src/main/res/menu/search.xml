@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:icon="@drawable/ic_menu_search"
+        android:orderInCategory="1"
+        android:id="@+id/action_search"
+        android:title="@string/app_name" />
+
+    <!-- Switching between grid and list icon -->
+    <item
+        android:id="@+id/action_list"
+        android:icon="@drawable/ic_view_grid"
+        android:orderInCategory="2"
+        android:title="@string/app_name"
+        app:showAsAction="always|collapseActionView" />
+</menu>

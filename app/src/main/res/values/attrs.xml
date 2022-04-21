@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="ds">
+        <attr name="background_dark" format="color"/>
+        <attr name="background_lite" format="color"/>
+        <attr name="background_lite2" format="color"/>
+        <attr name="cardBackground" format="color"/>
+        <attr name="textColorTable" format="color"/>
+        <attr name="text_color" format="color"/>
+        <attr name="hint" format="color"/>
+        <attr name="gray" format="color"/>
+        <attr name="view" format="color"/>
+        <attr name="textColorLite" format="color"/>
+
+        <attr name="transitionMetals" format="color"/>
+        <attr name="nonMetals" format="color"/>
+        <attr name="alkaliMetals" format="color"/>
+        <attr name="alkalineEarthMetals" format="color"/>
+        <attr name="nobleGases" format="color"/>
+        <attr name="metalloids" format="color"/>
+        <attr name="postTransitionMetals" format="color"/>
+        <attr name="halogens" format="color"/>
+        <attr name="lanthanides" format="color"/>
+        <attr name="actinides" format="color"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_lite2"
+    android:layoutDirection="ltr"
+    tools:context=".SettingActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="UselessParent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:title="Setting"
+            app:titleTextColor="@color/white"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar_setting" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/appearance"
+                    android:textSize="25sp"
+                    android:textColor="?attr/hint"
+                    android:gravity="center"
+                    android:id="@+id/textView126" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="9"
+                        android:layout_marginBottom="10dp"
+                        tools:ignore="RtlHardcoded">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/night_view"
+                            android:textColor="?attr/text_color"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:id="@+id/textView127" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/change_application_theme_to_night_view"
+                            style="@style/components"
+                            android:textColor="?attr/text_color"
+                            android:id="@+id/textView130" />
+
+                    </LinearLayout>
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="right"
+                        android:id="@+id/myswitch"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+                <View
+                    style="@style/dividers"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+<!--
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/extra"
+                        android:textSize="25sp"
+                        android:textColor="?attr/hint"
+                        android:gravity="center"
+                        android:id="@+id/textView136" />
+
+                    <LinearLayout
+                        android:onClick="settingReport"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/report_a_bug"
+                            style="@style/sub_title"
+                            android:textColor="?attr/text_color"
+                            android:id="@+id/textView137" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/report_any_problem_to_make_the_ap_better"
+                            style="@style/components"
+                            android:textColor="?attr/text_color"
+                            android:id="@+id/textView135" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="@string/check_for_updates"
+                            style="@style/sub_title"
+                            android:textColor="?attr/text_color"
+                            android:id="@+id/textView133" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/may_be_a_new_updates_with_new_features_and_information_for_elements"
+                            style="@style/components"
+                            android:textColor="?attr/text_color"
+                            android:id="@+id/textView134" />
+                    </LinearLayout>
+-->
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

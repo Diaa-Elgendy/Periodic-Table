@@ -1,0 +1,2774 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/content_main"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:background="?attr/background_lite"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        android:scrollbarSize="3dp"
+        android:scrollbarThumbHorizontal="?attr/colorPrimaryDark"
+        android:scrollbarTrackHorizontal="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="RtlHardcoded,UselessParent">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:scrollbarSize="2dp"
+            android:scrollbarThumbHorizontal="@android:color/transparent"
+            android:scrollbarTrackHorizontal="@android:color/transparent"
+            tools:ignore="ScrollViewSize">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingTop="25dp"
+                        android:layout_gravity="left"
+                        android:background="?attr/background_dark"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/periods"
+                            android:text="@string/_1"
+                            android:textColor="#616161" />
+
+                        <TextView
+                            style="@style/periods"
+                            android:text="@string/_2"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            style="@style/periods"
+                            android:text="@string/_3"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            style="@style/periods"
+                            android:text="@string/_4"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            style="@style/periods"
+                            android:text="@string/_5"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            style="@style/periods"
+                            android:text="@string/_6"
+                            tools:ignore="TextContrastCheck" />
+
+                        <TextView
+                            style="@style/periods"
+                            android:text="@string/_7"
+                            tools:ignore="TextContrastCheck" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="5dp"
+                            android:layout_gravity="left"
+                            android:background="?attr/background_dark"
+                            android:orientation="horizontal"
+                            tools:ignore="RtlSymmetry">
+
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_1"
+                                tools:ignore="TextContrastCheck" />
+
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_2"
+                                tools:ignore="TextContrastCheck" />
+
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_3"
+                                tools:ignore="TextContrastCheck" />
+
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_4"
+                                tools:ignore="TextContrastCheck" />
+
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_5"
+                                tools:ignore="TextContrastCheck" />
+
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_6"
+                                tools:ignore="TextContrastCheck" />
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_7"/>
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_8"/>
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_9"/>
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_10"/>
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_11"/>
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_12"/>
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_13"/>
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_14"/>
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_15"/>
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_16"/>
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_17"/>
+                            <TextView
+                                style="@style/groups"
+                                android:text="@string/_18"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/period1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                tools:ignore="RtlSymmetry">
+
+                                <LinearLayout
+                                    android:id="@+id/btn_H"
+                                    style="@style/non_metals"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_margin="1dp"
+                                    android:onClick="onH"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:text="@string/_1"
+                                        style="@style/atomic_no"
+                                        android:textSize="14sp"
+                                        tools:ignore="TooDeepLayout" />
+
+                                    <TextView
+                                        style="@style/symbol"
+                                        android:fadingEdge="none"
+                                        android:text="@string/h" />
+
+                                    <TextView
+                                        style="@style/name"
+                                        android:text="@string/hydrogen" />
+
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="88dp"
+                                    android:layout_height="55dp"
+                                    android:layout_margin="1dp" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_height="match_parent"
+                                    android:layout_width="165dp"
+                                    android:layout_margin="3dp"
+                                    android:onClick="OnAlkalineMetals">
+
+                                    <TextView
+                                        android:id="@+id/txt_alkali_metals"
+                                        style="@style/categories"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="@drawable/alkali_metals"
+                                        android:onClick="OnAlkaliMetals"
+                                        android:text="@string/alkali_metals"
+                                        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/alkaline_earth_metals"
+                                        style="@style/categories"
+                                        android:background="@drawable/alkaline_earth_metals"
+                                        android:id="@+id/txt_alkaline_earth_metals" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="165dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="3dp"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/txt_non_metals"
+                                        style="@style/categories"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="@drawable/non_metals"
+                                        android:onClick="OnNonMetals"
+                                        android:text="@string/non_metals"
+                                        tools:ignore="TextContrastCheck" />
+
+                                    <TextView
+                                        android:id="@+id/txt_halogens"
+                                        style="@style/categories"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/halogens"
+                                        android:onClick="OnHalogens"
+                                        android:text="@string/halogens"
+                                        tools:ignore="TextContrastCheck" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="165dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="3dp"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/metalloids"
+                                        style="@style/categories"
+                                        android:onClick="OnMetalloids"
+                                        android:background="@drawable/metalloids"
+                                        android:layout_marginBottom="5dp"
+                                        android:id="@+id/txt_metalloids" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/noble_gases"
+                                        android:background="@drawable/noble_gases"
+                                        style="@style/categories"
+                                        android:onClick="OnNoble"
+                                        android:id="@+id/txt_noble_gases" />
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="139dp"
+                                    android:layout_height="55dp"
+                                    android:layout_margin="1dp"/>
+
+                                <Space
+                                    style="@style/space"/>
+
+                                <Space
+                                    style="@style/space"/>
+
+                                <Space
+                                    style="@style/space"/>
+
+                                <Space
+                                    style="@style/space"/>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/noble_gases"
+                                    android:onClick="OnHe"
+                                    android:id="@+id/btn_helium" >
+
+                                    <TextView
+                                        android:text="@string/_2"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/he"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/helium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/period2"
+                                android:paddingLeft="5dp"
+                                tools:ignore="RtlSymmetry">
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/alkali_metals"
+                                    android:onClick="OnLithium"
+                                    android:id="@+id/btn_lithium">
+
+                                    <TextView
+                                        android:text="@string/_3"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/li"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        style="@style/name"
+                                        android:text="@string/lithium"
+                                        tools:ignore="TextContrastCheck" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/alkaline_earth_metals"
+                                    android:onClick="OnBeryllium"
+                                    android:id="@+id/btn_beryllium" >
+
+                                    <TextView
+                                        android:text="@string/_4"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/be"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/beryllium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="25dp"
+                                    android:layout_height="55dp"
+                                    android:layout_margin="1dp"/>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="165dp"
+                                    android:layout_margin="3dp"
+                                    android:layout_height="match_parent"
+                                    android:onClick="OnMainTransition"
+                                    >
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/main_transition_metals"
+                                        style="@style/categories"
+                                        android:background="@drawable/transition_metals"
+                                        android:layout_marginBottom="5dp"
+                                        android:id="@+id/txt_main_transition" />
+
+                                    <TextView
+                                        android:id="@+id/txt_post_transition"
+                                        style="@style/categories"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/post_transition_metals"
+                                        android:onClick="OnPostTransition"
+                                        android:text="@string/post_transition_metals"
+                                        tools:ignore="TouchTargetSizeCheck" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="165dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="3dp"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/txt_lanthanoides"
+                                        style="@style/categories"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="@drawable/lanthanides"
+                                        android:onClick="OnLanthanides"
+                                        android:text="@string/lanthanides"
+                                        tools:ignore="TextContrastCheck" />
+
+                                    <TextView
+                                        android:id="@+id/txt_actinoides"
+                                        style="@style/categories"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/actinoides"
+                                        android:onClick="OnActinides"
+                                        android:text="@string/actinides"
+                                        tools:ignore="TextContrastCheck,TextContrastCheck" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="165dp"
+                                    android:layout_margin="3dp"
+                                    android:weightSum="1"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/all"
+                                        android:onClick="OnAll"
+                                        android:background="@drawable/all"
+                                        style="@style/categories"
+                                        android:id="@+id/txt_all" />
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="78dp"
+                                    android:layout_height="55dp"
+                                    android:layout_margin="1dp"/>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/metalloids"
+                                    android:onClick="OnBoron"
+                                    android:id="@+id/btn_boron" >
+
+                                    <TextView
+                                        android:text="@string/_5"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/b"
+                                        style="@style/symbol"
+                                        tools:ignore="TooManyViews" />
+
+                                    <TextView
+                                        android:text="@string/boron"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/non_metals"
+                                    android:onClick="OnC"
+                                    android:id="@+id/btn_carbon" >
+
+                                    <TextView
+                                        android:text="@string/_6"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/c"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/carbon"
+                                        style="@style/name" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/non_metals"
+                                    android:id="@+id/btn_nitrogen"
+                                    android:onClick="OnN">
+
+                                    <TextView
+
+                                        android:text="@string/_7"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/n"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/nitrogen"
+                                        style="@style/name"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/non_metals"
+                                    android:onClick="OnO"
+                                    android:id="@+id/btn_oxygen" >
+
+                                    <TextView
+                                        android:text="@string/_8"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/o"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/oxygen"
+                                        style="@style/name" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/halogens"
+                                    android:onClick="onF"
+                                    android:id="@+id/btn_fluorine" >
+
+                                    <TextView
+                                        android:text="@string/_9"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/f"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/fluorine"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/noble_gases"
+                                    android:onClick="onNe"
+                                    android:id="@+id/btn_neon" >
+
+                                    <TextView
+                                        android:text="@string/_10"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ne"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/neon"
+                                        style="@style/name" />
+
+                                </LinearLayout>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/period3"
+                                android:onClick="OnSodium"
+                                android:paddingLeft="5dp"
+                                tools:ignore="RtlSymmetry">
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/alkali_metals"
+                                    android:id="@+id/btn_sodium" >
+
+                                    <TextView
+                                        style="@style/atomic_no"
+                                        android:text="@string/_11"
+                                        tools:ignore="TextContrastCheck" />
+
+                                    <TextView
+                                        android:text="@string/na"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        style="@style/name"
+                                        android:text="@string/sodium"
+                                        tools:ignore="TextContrastCheck" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/alkaline_earth_metals"
+                                    android:onClick="OnMagnesium"
+                                    android:id="@+id/btn_magnesium" >
+
+                                    <TextView
+                                        android:text="@string/_12"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/mg"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/magnesium"
+                                        style="@style/name"/>
+
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="620dp"
+                                    android:layout_height="match_parent"
+                                    android:clickable="false"/>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/post_transition_metals"
+                                    android:onClick="OnAl"
+                                    android:id="@+id/btn_aluminium" >
+
+                                    <TextView
+                                        android:text="@string/_13"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/al"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/aluminium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/metalloids"
+                                    android:onClick="OnSi"
+                                    android:id="@+id/btn_silicon" >
+
+                                    <TextView
+                                        android:text="@string/_14"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/si"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/silicon"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/non_metals"
+                                    android:onClick="onP"
+                                    android:id="@+id/btn_phosphorus" >
+
+                                    <TextView
+                                        android:text="@string/_15"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/p"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/phosphorus"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/non_metals"
+                                    android:onClick="onS"
+                                    android:id="@+id/btn_sulfur" >
+
+                                    <TextView
+                                        android:text="@string/_16"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/s"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/sulfur"
+                                        style="@style/name"/>
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/halogens"
+                                    android:onClick="onCl"
+                                    android:id="@+id/btn_chlorine" >
+
+                                    <TextView
+                                        android:text="@string/_17"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/cl"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/chlorine"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/noble_gases"
+                                    android:onClick="onAr"
+                                    android:id="@+id/btn_argon" >
+
+                                    <TextView
+                                        android:text="@string/_18"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ar"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/argon"
+                                        style="@style/name" />
+
+                                </LinearLayout>
+
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/period4"
+                                android:onClick="OnPotassium"
+                                android:paddingLeft="5dp"
+                                tools:ignore="RtlSymmetry">
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/alkali_metals"
+                                    android:id="@+id/btn_potassium" >
+
+                                    <TextView
+                                        android:text="@string/_19"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/k"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/potassium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/alkaline_earth_metals"
+                                    android:onClick="OnCalcium"
+                                    android:id="@+id/btn_calcium" >
+
+                                    <TextView
+                                        android:text="@string/_20"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ca"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/calcium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnScandium"
+                                    android:id="@+id/btn_scandium" >
+
+                                    <TextView
+                                        android:text="@string/_21"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/sc"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/scandium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnTitanium"
+                                    android:id="@+id/btn_titanium" >
+
+                                    <TextView
+                                        android:text="@string/_22"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ti"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/titanium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnVanad"
+                                    android:id="@+id/btn_vanadium" >
+
+                                    <TextView
+                                        android:text="@string/_23"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/v"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/vanadium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnChromium"
+                                    android:id="@+id/btn_chromium" >
+
+                                    <TextView
+                                        android:text="@string/_24"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/cr"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/chromium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnManganese"
+                                    android:id="@+id/btn_manganese" >
+
+                                    <TextView
+                                        android:text="@string/_25"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/mn"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/manganese"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnFe"
+                                    android:id="@+id/btn_iron" >
+
+                                    <TextView
+                                        android:text="@string/_26"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/fe"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/iron"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnCo"
+                                    android:id="@+id/btn_cobalt" >
+
+                                    <TextView
+                                        android:text="@string/_27"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/co"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/cobalt"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnNi"
+                                    android:id="@+id/btn_nickel" >
+
+                                    <TextView
+                                        android:text="@string/_28"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ni"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/nickel"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnCu"
+                                    android:id="@+id/btn_copper" >
+
+                                    <TextView
+                                        android:text="@string/_29"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/cu"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/copper"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnZn"
+                                    android:id="@+id/btn_zinc" >
+
+                                    <TextView
+                                        android:text="@string/_30"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/zn"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/zinc"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/post_transition_metals"
+                                    android:id="@+id/btn_gallium"
+                                    android:onClick="OnGa">
+
+                                    <TextView
+                                        android:text="@string/_31"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ga"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/gallium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/metalloids"
+                                    android:onClick="OnGe"
+                                    android:id="@+id/btn_germanium" >
+
+                                    <TextView
+                                        android:text="@string/_32"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ge"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/germanium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/metalloids"
+                                    android:onClick="OnAs"
+                                    android:id="@+id/btn_arsenic" >
+
+                                    <TextView
+                                        android:text="@string/_33"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/as"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/arsenic"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/non_metals"
+                                    android:onClick="onSe"
+                                    android:id="@+id/btn_selenium" >
+
+                                    <TextView
+                                        android:text="@string/_34"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/se"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/selenium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/halogens"
+                                    android:onClick="OnBr"
+                                    android:id="@+id/btn_bromine" >
+
+                                    <TextView
+                                        android:text="@string/_35"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/br"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/bromine"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/noble_gases"
+                                    android:onClick="onKr"
+                                    android:id="@+id/btn_krypton" >
+
+                                    <TextView
+                                        android:text="@string/_36"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/kr"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/krypton"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/period5"
+                                android:paddingLeft="5dp"
+                                tools:ignore="RtlSymmetry">
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/alkali_metals"
+                                    android:onClick="OnRb"
+                                    android:id="@+id/btn_rubidium" >
+
+                                    <TextView
+                                        android:text="@string/_37"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/rb"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        style="@style/name"
+                                        android:text="@string/rubidium"
+                                        tools:ignore="TextContrastCheck" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/alkaline_earth_metals"
+                                    android:onClick="OnStrontium"
+                                    android:id="@+id/btn_strontium" >
+
+                                    <TextView
+                                        android:text="@string/_38"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/sr"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/strontium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnY"
+                                    android:id="@+id/btn_yttrium" >
+
+                                    <TextView
+                                        android:text="@string/_39"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/y"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/yttrium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnZr"
+                                    android:id="@+id/btn_zirconium">
+
+                                    <TextView
+                                        android:text="@string/_40"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/zr"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/zirconium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnNb"
+                                    android:id="@+id/btn_niobium">
+
+                                    <TextView
+                                        android:text="@string/_41"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        style="@style/symbol"
+                                        android:text="@string/nb" />
+
+                                    <TextView
+                                        android:text="@string/niobium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnMo"
+                                    android:id="@+id/btn_molybdenum">
+
+                                    <TextView
+                                        android:text="@string/_42"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/mo"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/molybdenum"
+                                        style="@style/name" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnTc"
+                                    android:id="@+id/btn_technetium">
+
+                                    <TextView
+                                        android:text="43         !"
+                                        style="@style/atomic_no"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:text="@string/tc"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/technetium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnRu"
+                                    android:id="@+id/btn_ruthenium">
+
+                                    <TextView
+                                        android:text="@string/_44"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ru"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/ruthenium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnRh"
+                                    android:id="@+id/btn_rhodium">
+
+                                    <TextView
+                                        android:text="@string/_45"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/rh"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/rhodium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnPd"
+                                    android:id="@+id/btn_palladium">
+
+                                    <TextView
+                                        android:text="@string/_46"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/pd"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/palladium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnAg"
+                                    android:id="@+id/btn_silver">
+
+                                    <TextView
+                                        android:text="@string/_47"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ag"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/silver"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnCd"
+                                    android:id="@+id/btn_cadmium">
+
+                                    <TextView
+                                        android:text="@string/_48"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/cd"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/cadmium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/post_transition_metals"
+                                    android:id="@+id/btn_indium"
+                                    android:onClick="OnIn">
+
+                                    <TextView
+                                        android:text="@string/_49"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/in"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/indium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/post_transition_metals"
+                                    android:onClick="OnSn"
+                                    android:id="@+id/btn_tin" >
+
+                                    <TextView
+                                        android:text="@string/_50"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/sn"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/tin"
+                                        style="@style/name"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/metalloids"
+                                    android:onClick="OnSb"
+                                    android:id="@+id/btn_antimony" >
+
+                                    <TextView
+                                        android:text="@string/_51"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/sb"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/antimony"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/metalloids"
+                                    android:onClick="OnTe"
+                                    android:id="@+id/btn_tellurium" >
+
+                                    <TextView
+                                        android:text="@string/_52"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/te"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/tellurium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/halogens"
+                                    android:onClick="OnI"
+                                    android:id="@+id/btn_iodine" >
+
+                                    <TextView
+                                        android:text="@string/_53"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/i"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/iodine"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/noble_gases"
+                                    android:onClick="OnXe"
+                                    android:id="@+id/btn_xenon" >
+
+                                    <TextView
+                                        android:text="@string/_54"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/xe"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/xenon"
+                                        style="@style/name"/>
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/period6"
+                                android:paddingLeft="5dp"
+                                tools:ignore="RtlSymmetry">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/alkali_metals"
+                                    android:onClick="OnCs"
+                                    android:id="@+id/btn_cesium" >
+
+                                    <TextView
+                                        android:text="@string/_55"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/cs"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        style="@style/name"
+                                        android:text="@string/cesium"
+                                        tools:ignore="TextContrastCheck" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/alkaline_earth_metals"
+                                    android:onClick="OnBa"
+                                    android:id="@+id/btn_barium" >
+
+                                    <TextView
+                                        android:text="@string/_56"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ba"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/barium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_1" >
+
+                                    <TextView
+                                        android:text="@string/_57_71"
+                                        style="@style/atomic_no" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnHf"
+                                    android:id="@+id/btn_hafnium" >
+
+                                    <TextView
+                                        android:text="@string/_72"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/hf"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/hafnium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnTa"
+                                    android:id="@+id/btn_tantalum" >
+
+                                    <TextView
+                                        android:text="@string/_73"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ta"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/tantalum"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnW"
+                                    android:id="@+id/btn_tungsten" >
+
+                                    <TextView
+                                        android:text="@string/_74"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/w"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/tungsten"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnRe"
+                                    android:id="@+id/btn_rhenium" >
+
+                                    <TextView
+                                        android:text="@string/_75"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/re"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/rhenium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:id="@+id/btn_osmium"
+                                    android:onClick="OnOs">
+
+                                    <TextView
+                                        android:text="@string/_76"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/os"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/osmium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnIr"
+                                    android:id="@+id/btn_iridium" >
+
+                                    <TextView
+                                        android:text="@string/_77"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ir"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/iridium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnPt"
+                                    android:id="@+id/btn_platinum" >
+
+                                    <TextView
+                                        android:text="@string/_78"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/pt"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/platinum"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnAu"
+                                    android:id="@+id/btn_gold" >
+
+                                    <TextView
+                                        android:text="@string/_79"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/au"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/gold"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnHg"
+                                    android:id="@+id/btn_mercury" >
+
+                                    <TextView
+                                        android:text="@string/_80"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/hg"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/mercury"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/post_transition_metals"
+                                    android:onClick="OnTl"
+                                    android:id="@+id/btn_thallium" >
+
+                                    <TextView
+                                        android:text="@string/_81"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/tl"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/thallium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/post_transition_metals"
+                                    android:onClick="OnPb"
+                                    android:id="@+id/btn_lead" >
+
+                                    <TextView
+                                        android:text="@string/_82"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/pb"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/lead"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/post_transition_metals"
+                                    android:onClick="OnBi"
+                                    android:id="@+id/btn_bismuth" >
+
+                                    <TextView
+                                        android:text="@string/_83"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/bi"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/bismuth"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/metalloids"
+                                    android:onClick="OnPo"
+                                    android:id="@+id/btn_polonium" >
+
+                                    <TextView
+                                        android:text="@string/_84"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/po"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/polonium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/halogens"
+                                    android:onClick="OnAt"
+                                    android:id="@+id/btn_astatine" >
+
+                                    <TextView
+                                        android:text="@string/_85"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/at"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/astatine"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/noble_gases"
+                                    android:onClick="OnRn"
+                                    android:id="@+id/btn_radon" >
+
+                                    <TextView
+                                        android:text="@string/_86"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/rn"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/radon"
+                                        style="@style/name"/>
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/period7"
+                                android:layout_marginBottom="15dp"
+                                android:paddingLeft="5dp"
+                                tools:ignore="RtlSymmetry">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/alkali_metals"
+                                    android:onClick="OnFr"
+                                    android:id="@+id/btn_francium" >
+
+                                    <TextView
+                                        android:text="@string/_87"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/fr"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/francium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/alkaline_earth_metals"
+                                    android:onClick="OnRa"
+                                    android:id="@+id/btn_radium" >
+
+                                    <TextView
+                                        android:text="@string/_88"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ra"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/radium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:id="@+id/btn_2" >
+
+                                    <TextView
+                                        android:text="@string/_89_103"
+                                        style="@style/atomic_no" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnRf"
+                                    android:id="@+id/btn_rutherfordium" >
+
+                                    <TextView
+                                        android:text="@string/_104"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        style="@style/symbol"
+                                        android:text="@string/rf"/>
+
+                                    <TextView
+                                        android:text="@string/rutherfordium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnDb"
+                                    android:id="@+id/btn_dubnium" >
+
+                                    <TextView
+                                        android:text="@string/_105"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/db"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/dubnium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnSg"
+                                    android:id="@+id/btn_seaborgium" >
+
+                                    <TextView
+                                        android:text="@string/_106"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/sg"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/seaborgi"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnBh"
+                                    android:id="@+id/btn_bohrium" >
+
+                                    <TextView
+                                        android:text="@string/_107"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/bh"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/bohrium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnHs"
+                                    android:id="@+id/btn_hassium" >
+
+                                    <TextView
+                                        android:text="@string/_108"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/hs"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/hassium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnMt"
+                                    android:id="@+id/btn_meitnerium" >
+
+                                    <TextView
+                                        android:text="@string/_109"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/mt"
+                                        android:layout_width="match_parent"
+                                        style="@style/symbol"/>
+
+                                    <TextView
+                                        android:text="@string/meitnerium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnDs"
+                                    android:id="@+id/btn_darmstadtium"  >
+
+                                    <TextView
+                                        android:text="@string/_110"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ds"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/darmstadtium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnRg"
+                                    android:id="@+id/btn_roentgenium"  >
+
+                                    <TextView
+                                        android:text="@string/_111"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/rg"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/roentgenium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/transition_metals"
+                                    android:onClick="OnCn"
+                                    android:id="@+id/btn_copernicium"  >
+
+                                    <TextView
+                                        android:text="@string/_112"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/cn"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/copernicium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/post_transition_metals"
+                                    android:onClick="OnNh"
+                                    android:id="@+id/btn_nihonium" >
+
+                                    <TextView
+                                        android:text="@string/_113"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/nh"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/nihonium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/post_transition_metals"
+                                    android:onClick="OnFl"
+                                    android:id="@+id/btn_flerovium" >
+
+                                    <TextView
+                                        android:text="@string/_114"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/fl"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/flerovium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/post_transition_metals"
+                                    android:onClick="OnMs"
+                                    android:id="@+id/btn_moscovium" >
+
+                                    <TextView
+                                        android:text="@string/_115"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/mc"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/moscovium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/post_transition_metals"
+                                    android:onClick="OnLv"
+                                    android:id="@+id/btn_livermorium" >
+
+                                    <TextView
+                                        android:text="@string/_116"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/lv"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/livermorium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/halogens"
+                                    android:onClick="OnTs"
+                                    android:id="@+id/btn_tennessine" >
+
+                                    <TextView
+                                        android:text="@string/_117"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ts"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/tennessine"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/noble_gases"
+                                    android:onClick="OnOg"
+                                    android:id="@+id/btn_oganesson" >
+
+                                    <TextView
+                                        android:text="@string/_118"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/og"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/oganesson"
+                                        style="@style/name"/>
+                                </LinearLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="5dp"
+                                tools:ignore="RtlSymmetry">
+
+                                <Space
+                                    style="@style/space"/>
+
+                                <Space
+                                    style="@style/space"/>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:onClick="onLa"
+                                    android:id="@+id/btn_lanthanum" >
+
+                                    <TextView
+                                        android:text="@string/_57"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/la"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/lanthanum"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:onClick="OnCe"
+                                    android:id="@+id/btn_cerium" >
+
+                                    <TextView
+                                        android:text="@string/_58"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ce"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/cerium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_praseodymiumm"
+                                    android:onClick="OnPr">
+
+                                    <TextView
+                                        android:text="@string/_59"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/pr"
+                                        style="@style/symbol"
+                                        android:id="@+id/textView39" />
+
+                                    <TextView
+                                        android:text="@string/praseod"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_neodymium"
+                                    android:onClick="OnNd">
+
+                                    <TextView
+                                        android:text="@string/_60"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/nd"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/neodym"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_promethium"
+                                    android:onClick="OnPm">
+
+                                    <TextView
+                                        android:text="@string/_61"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/pm"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/promethium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_samarium"
+                                    android:onClick="OnSm">
+
+                                    <TextView
+                                        android:text="@string/_62"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/sm"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/samarium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_europium"
+                                    android:onClick="OnEu">
+
+                                    <TextView
+                                        android:text="@string/_63"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/eu"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/europium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_gadolinium"
+                                    android:onClick="OnGd">
+
+                                    <TextView
+                                        android:text="@string/_64"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/gd"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/gadolinium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_terbium"
+                                    android:onClick="OnTb">
+
+                                    <TextView
+                                        android:text="@string/_65"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/tb"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/terbium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_dysprosium"
+                                    android:onClick="OnDy">
+
+                                    <TextView
+                                        android:text="@string/_66"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/dy"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/dysprosium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_holmium"
+                                    android:onClick="OnHo">
+
+                                    <TextView
+                                        android:text="@string/_67"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ho"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/holmium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_erbium"
+                                    android:onClick="OnEr">
+
+                                    <TextView
+                                        android:text="@string/_68"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/er"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/erbium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_thulium"
+                                    android:onClick="OnTm">
+
+                                    <TextView
+                                        android:text="@string/_69"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/tm"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/thulium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_ytterbium"
+                                    android:onClick="OnYb">
+
+                                    <TextView
+                                        android:text="@string/_70"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/yt"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/ytterbium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/lanthanides"
+                                    android:id="@+id/btn_lutetium"
+                                    android:onClick="OnLu">
+
+                                    <TextView
+                                        android:text="@string/_71"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/lu"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/lutetium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="5dp"
+                                tools:ignore="RtlSymmetry">
+
+                                <Space
+                                    style="@style/space" />
+
+                                <Space
+                                    style="@style/space"/>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:onClick="OnAc"
+                                    android:id="@+id/btn_actinium" >
+
+                                    <TextView
+                                        android:text="@string/_94"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/ac"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/actinium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:onClick="OnTh"
+                                    android:id="@+id/btn_thorium" >
+
+                                    <TextView
+                                        android:text="@string/_90"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/th"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/thorium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:onClick="OnPa"
+                                    android:id="@+id/btn_protactinium" >
+
+                                    <TextView
+                                        android:text="@string/_91"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/pa"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/protactinium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:onClick="OnU"
+                                    android:id="@+id/btn_uranium" >
+
+                                    <TextView
+                                        android:text="@string/_92"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/u"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/uranium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:onClick="OnNp"
+                                    android:id="@+id/btn_neptunium" >
+
+                                    <TextView
+                                        android:text="@string/_93"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/np"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/neptunium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:onClick="OnPu"
+                                    android:id="@+id/btn_plutonium" >
+
+                                    <TextView
+                                        android:text="@string/_89"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/pu"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/plutonium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:onClick="OnAm"
+                                    android:id="@+id/btn_americium" >
+
+                                    <TextView
+                                        android:text="@string/_95"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/am"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/americium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:onClick="OnCm"
+                                    android:id="@+id/btn_curium" >
+
+                                    <TextView
+                                        android:text="@string/_96"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/cm"
+                                        style="@style/symbol"/>
+
+                                    <TextView
+                                        android:text="@string/curium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:id="@+id/btn_berkelium"
+                                    android:onClick="OnBk">
+
+                                    <TextView
+                                        android:text="@string/_97"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/bk"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/berkelium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:id="@+id/btn_californium"
+                                    android:onClick="OnCf">
+
+                                    <TextView
+                                        android:text="@string/_98"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/cf"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/californium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:id="@+id/btn_einsteinium"
+                                    android:onClick="OnEs">
+
+                                    <TextView
+                                        android:text="@string/_99"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/es"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/einsteinium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:id="@+id/btn_fermium"
+                                    android:onClick="OnFm">
+
+                                    <TextView
+                                        android:text="@string/_100"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/fm"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/fermium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:id="@+id/btn_mendelevium"
+                                    android:onClick="OnMd">
+
+                                    <TextView
+                                        android:text="@string/_101"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/md"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/mendelevium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:id="@+id/btn_nobelium"
+                                    android:onClick="OnNo">
+
+                                    <TextView
+                                        android:text="@string/_102"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/no"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/nobelium"
+                                        style="@style/name"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    style="@style/actinoides"
+                                    android:id="@+id/btn_lawrencium"
+                                    android:onClick="OnLr">
+
+                                    <TextView
+                                        android:text="@string/_103"
+                                        style="@style/atomic_no" />
+
+                                    <TextView
+                                        android:text="@string/lr"
+                                        style="@style/symbol" />
+
+                                    <TextView
+                                        android:text="@string/lawrencium"
+                                        style="@style/name" />
+
+                                </LinearLayout>
+
+                            </TableRow>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>

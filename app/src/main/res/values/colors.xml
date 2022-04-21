@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008cff</color>
+    <color name="colorPrimaryDark">#047fe4</color>
+    <color name="background_lite">#e9eef3</color>
+    <color name="background_dark">#dbdfe2</color>
+    <color name="textColor">#242833</color>
+    <color name="hint">#768291</color>
+    <color name="divider">#c5c5ce</color>
+    <color name="colorAccent">#008cff</color>
+    <color name="gray">#bebebe</color>
+    <color name="background">#a43b3b3b</color>
+    <color name="trans">#00ffffff</color>
+
+    <color name="blue">#4d8cfd</color>
+    <color name="red">#fd3643</color>
+    <color name="orange">#ffa023</color>
+    <color name="yellow">#ffff4b</color>
+    <color name="green">#0bb137</color>
+    <color name="cyan">#49cffb</color>
+    <color name="purple">#8401a3</color>
+    <color name="pink">#ff3387</color>
+
+    <color name="non_metal2">#02b36c</color>
+    <color name="alkali_metals2">#d24848</color>
+    <color name="alkaline_earth_metal2">#e1b07f</color>
+    <color name="transition_metals2">#ab7b7b</color>
+    <color name="post_transition_metals2">#a6a670</color>
+    <color name="halogens2">#1893a3</color>
+    <color name="metalloids2">#7a8c94</color>
+    <color name="nobel2">#68428e</color>
+    <color name="lanthanides2">#c18806</color>
+    <color name="actinoides2">#a9a91c</color>
+
+    <color name="non_metal3">#02e289</color>
+    <color name="alkali_metals3">#ff6666</color>
+    <color name="alkaline_earth_metal3">#ffcc99</color>
+    <color name="transition_metals3">#cc9999</color>
+    <color name="post_transition_metals3">#cccc99</color>
+    <color name="halogens3">#26c6da</color>
+    <color name="metalloids3">#90a4ae</color>
+    <color name="nobel3">#9966cc</color>
+    <color name="lanthanides3">#ffb60d</color>
+    <color name="actinoides3">#cccc33</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="offwhite">#e9e7e6</color>
+
+    <color name="nfdas">#D3D3D3</color>
+</resources>

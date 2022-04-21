@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_lite2"
+    tools:ignore="RtlHardcoded,RtlSymmetry"
+    tools:context=".AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:title="Periodic Table"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:titleTextColor="@color/white" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/atom"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/textView103"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:text="@string/periodic_table_2021_is_a_complete_offline_free_application_for_android_to_give_you_all_the_properties_photos_and_uses_of_all_elements"
+                    android:textColor="?attr/text_color"
+                    android:textSize="17sp" />
+
+                <View
+                    style="@style/dividers"
+                    android:layout_width="match_parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="@string/version_1_0_0"
+                    android:textColor="?attr/text_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:layout_gravity=""
+                    android:text="@string/copyrights_2021"
+                    android:textColor="?attr/text_color"
+                    android:textSize="15sp" />
+
+
+                <!--
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@mipmap/ic_launcher"
+                                    android:id="@+id/imageView2" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Periodic Table 2018"
+                                    android:textSize="30dp"
+                                    android:textColor="?attr/text_color"
+                                    android:gravity="center"
+                                    android:id="@+id/textView124" />
+
+                                <View
+                                    style="@style/dividers"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="About"
+                                    android:gravity="center"
+                                    android:textSize="30dp"
+                                    android:textColor="?attr/hint"
+                                    android:textStyle="bold"
+                                    android:id="@+id/textView83" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Periodic table 2018 is a free application for android to give you all the properties and uses of all elements"
+                                    android:textSize="17dp"
+                                    android:textColor="?attr/text_color"
+                                    android:paddingBottom="10dp"
+                                    android:id="@+id/textView103" />
+
+                                <View
+                                    style="@style/dividers"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="How to use"
+                                    android:textStyle="bold"
+                                    android:textSize="30dp"
+                                    android:gravity="center"
+                                    android:textColor="?attr/hint"
+                                    android:id="@+id/textView121" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="- Any element you click on it the app will display all the properties, information, uses and photos for it"
+                                    android:textSize="17dp"
+                                    android:textColor="?attr/text_color"
+                                    android:id="@+id/textView120" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="- For more information, there is a direct link in the page of all elements to Wikipedia"
+                                    android:textSize="17dp"
+                                    android:textColor="?attr/text_color"
+                                    android:id="@+id/textView119" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="- when you pressed a long press on any element it’s photo will appear"
+                                    android:textSize="17dp"
+                                    android:textColor="?attr/text_color"
+                                    android:id="@+id/textView118" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="- You can search for all elements Or Browsing all elements by alphabetical order"
+                                    android:textSize="17dp"
+                                    android:textColor="?attr/text_color"
+                                    android:id="@+id/textView115" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="- The elements is sorted in 10 categories:"
+                                    android:textSize="17dp"
+                                    android:textColor="?attr/text_color"
+                                    android:id="@+id/textView117" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="1) Alkali metals\n2) Alkaline earth metals\n3) Transition metals\n4) Post transition metals\n5) Metalloids\n6) Non metals\n7) Halogens\n8) Noble gas\n9) Lanthanides\n10) Actinoides"
+                                    android:textSize="13dp"
+                                    android:textColor="?attr/text_color"
+                                    android:paddingLeft="16dp"
+                                    android:id="@+id/textView113" />
+
+                -->
+            </LinearLayout>
+
+</RelativeLayout>

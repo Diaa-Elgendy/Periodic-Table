@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/def_of_terms_app"
+            android:icon="@drawable/ic_menu_definitions"
+            android:title="@string/dictionary" />
+
+        <item
+            android:id="@+id/setting_app"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/settings" />
+
+        <item
+            android:id="@+id/rate_app"
+            android:icon="@drawable/ic_menu_rate"
+            android:title="@string/rate_app" />
+        <item
+            android:id="@+id/share_app"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/share" />
+        <item
+            android:id="@+id/about_app"
+            android:icon="@drawable/ic__menu_about"
+            android:title="@string/about" />
+
+    </group>
+    <!--
+       <item android:title="@string/reach_us">
+           <menu>
+
+               <item
+                   android:id="@+id/report_app"
+                   android:icon="@drawable/ic_feedback_black_24dp"
+                   android:title="@string/feedback" />
+
+            <item
+                android:id="@+id/rate_app"
+                android:icon="@drawable/ic_menu_rate"
+                android:title="@string/rate_app" />
+
+        </menu>
+    </item>
+    -->
+    <item android:title="@string/other">
+        <menu>
+
+            <item
+                android:id="@+id/exit_app"
+                android:icon="@drawable/ic_clear_black_24dp"
+                android:title="@string/exit" />
+
+        </menu>
+    </item>
+
+</menu>

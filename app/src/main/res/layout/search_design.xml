@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/background_lite">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/list_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="10dp"
+            android:background="?attr/background_lite">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:layout_margin="7dp"
+                   app:cardCornerRadius="12dp">
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:id="@+id/list_imageView"
+                       android:src="@drawable/hydrogen_photo" />
+
+               </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:orientation="vertical"
+                    tools:ignore="RtlHardcoded">
+
+                    <TextView
+                        android:id="@+id/list_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hydrogen"
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/list_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textview"
+                        android:textColor="@color/textColor"
+                        android:gravity="left"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/list_atomic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/atomic_no_118"
+                    android:textColor="@color/textColor"
+                    android:gravity="center|right"
+                    android:paddingRight="5dp"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

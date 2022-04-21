@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="elgendy.periodictable2018.HydrogenActivity">
+
+    <item
+        android:id="@+id/wiki"
+        android:orderInCategory="100"
+        android:title="@string/wikipedia"
+        android:icon="@mipmap/wikipedia"
+        app:showAsAction="always" />
+</menu>
